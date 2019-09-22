@@ -34,6 +34,26 @@ public class MainActivity extends AppCompatActivity {
         setTotalAmount(sharedPreferences, 0);
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.toolbar_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.settings_button) {
+            Intent intent = new Intent(this, SettingsActivity.class);
+            intent.putExtra(DAILY_BUDGET_ID, defaultDailyBudget);
+            startActivity(intent);
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
     private int getNumberOfDaysChangesSinceLastExecution(SharedPreferences sharedPreferences) throws ParseException {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
@@ -101,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
         textView.setText(budgetText);
     }
 
-    public void sendMessage(View view) {
+    public void submitTransaction(View view) {
         EditText editText = (EditText) findViewById(R.id.transaction_amount);
         String message = editText.getText().toString();
 

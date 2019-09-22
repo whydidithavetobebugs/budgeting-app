@@ -1,8 +1,7 @@
 <resources>
-    <string name="app_name">My First App</string>
-    <string name="hello_world_text">Hello Universe</string>
-    <string name="edit_message">Enter a message</string>
-    <string name="button_send">Submit</string>
+    <string name="app_name">Budget App</string>
+    <string name="submit_button_text">Submit</string>
+    <string name="save_button_text">Save</string>
     <string name="over_budget">£%1$d\n over budget</string>
     <string name="under_budget">£%1$d\n to spend</string>
     <string name="daily_budget">Daily Budget:</string>
