@@ -1,4 +1,4 @@
-package com.whydidithavetobebugs.budgetapp;
+package com.whydidithavetobebugs.budgetapp.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.content.Intent;
@@ -10,6 +10,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.whydidithavetobebugs.budgetapp.R;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -32,6 +34,26 @@ public class MainActivity extends AppCompatActivity {
 
         SharedPreferences sharedPreferences = getSharedPreferences("Prefs", MODE_PRIVATE);
         setTotalAmount(sharedPreferences, 0);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.toolbar_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.settings_button) {
+            Intent intent = new Intent(this, SettingsActivity.class);
+            intent.putExtra(DAILY_BUDGET_ID, defaultDailyBudget);
+            startActivity(intent);
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     private int getNumberOfDaysChangesSinceLastExecution(SharedPreferences sharedPreferences) throws ParseException {
@@ -101,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
         textView.setText(budgetText);
     }
 
-    public void sendMessage(View view) {
+    public void submitTransaction(View view) {
         EditText editText = (EditText) findViewById(R.id.transaction_amount);
         String message = editText.getText().toString();
 
