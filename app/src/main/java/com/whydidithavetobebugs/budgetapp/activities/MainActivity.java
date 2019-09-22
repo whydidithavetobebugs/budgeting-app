@@ -1,4 +1,4 @@
-package com.whydidithavetobebugs.budgetapp;
+package com.whydidithavetobebugs.budgetapp.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.content.Intent;
@@ -10,6 +10,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.whydidithavetobebugs.budgetapp.R;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
