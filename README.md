@@ -2,7 +2,7 @@
 
 ## TODO
 
-- Move budgeting calculation logic to BudgetEngine
+- Move budgeting calculation logic to com.whydidithavetobebugs.budgetapp.engine.BudgetEngine
 - Add tests
 - Package app
 - Show history of transactions somewhere in app (amount and timestamp)
