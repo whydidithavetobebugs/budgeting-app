@@ -19,9 +19,9 @@ As an example (assuming the default daily budget):
 3. At the start of Day 2, your daily budget is applied, and you again have £18 to spend (as you can't have more than the daily budget to spend).
 4. During Day 2, you spend £29, leaving you with a deficit of £11 at the end of the day.
 5. At the start of Day 3, the daily budget (£18) is again applied, but £11 of that is used to clear your deficit, so you only have £7 to spend.
-6. During Day 3, you spend £16, leaving you with a deficit of £5.
+6. During Day 3, you spend £12, leaving you with a deficit of £5.
 7. At the start of Day 4, the daily budget is applied, leaving you with £13 to spend.
-8. During Day 4, you spend £12, leaving you with £1 to spend.
+8. During Day 4, you spend £11, leaving you with £2 to spend.
 9. At the start of Day 5, you have £18 to spend.
 
 ## TODO
