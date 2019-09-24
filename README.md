@@ -1,8 +1,10 @@
 # Budget App
 
-1. [About](#About)
+1. [About](#about)
+2. [Screenshots](#screenshots)
+3. [TODOs](#todo)
 
-## About <a name="About"></a>
+## About <a name="about"></a>
 
 This is a simple app to track transactions against a daily budget. The budgeting rules are as follows:
 
@@ -26,7 +28,7 @@ As an example (assuming the default daily budget):
 8. During Day 4, you spend £11, leaving you with £2 to spend.
 9. At the start of Day 5, you have £18 to spend.
 
-## Screenshots
+## Screenshots <a name="screenshots"> </a>
 
 ### Main Activity
 
@@ -36,7 +38,7 @@ As an example (assuming the default daily budget):
 
 ![Settings activity page](img/SettingsActivity.png)
 
-## TODO
+## TODO <a name="todo"> </a>
 
 - Move budgeting calculation logic to com.whydidithavetobebugs.budgetapp.engine.BudgetEngine
 - Add tests
