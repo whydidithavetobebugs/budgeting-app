@@ -1,6 +1,8 @@
 # Budget App
 
-## About
+1. [About](#About)
+
+## About <a name="About"></a>
 
 This is a simple app to track transactions against a daily budget. The budgeting rules are as follows:
 
