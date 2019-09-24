@@ -24,6 +24,16 @@ As an example (assuming the default daily budget):
 8. During Day 4, you spend £11, leaving you with £2 to spend.
 9. At the start of Day 5, you have £18 to spend.
 
+## Screenshots
+
+### Main Activity
+
+![Main activity page](img/MainActivity.png)
+
+### Settings Activity
+
+![Settings activity page](img/SettingsActivity.png)
+
 ## TODO
 
 - Move budgeting calculation logic to com.whydidithavetobebugs.budgetapp.engine.BudgetEngine
