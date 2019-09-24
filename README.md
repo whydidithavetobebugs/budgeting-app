@@ -40,7 +40,6 @@ As an example (assuming the default daily budget):
 
 ## TODO <a name="todo"> </a>
 
-- Move budgeting calculation logic to com.whydidithavetobebugs.budgetapp.engine.BudgetEngine
 - Add tests
 - Package app
 - Show history of transactions somewhere in app (amount and timestamp)
