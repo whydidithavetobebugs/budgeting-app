@@ -24,16 +24,17 @@
         android:layout_height="50dp"
         android:layout_margin="84dp"
         android:layout_marginTop="84dp"
-        android:layout_marginEnd="50dp"
+        android:layout_marginEnd="40dp"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/daily_budget_text"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/daily_budget_text"
         android:layout_width="160dp"
         android:layout_height="49dp"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="84dp"
         android:gravity="center"
         android:text="@string/daily_budget"
