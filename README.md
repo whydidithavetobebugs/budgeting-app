@@ -40,10 +40,4 @@ As an example (assuming the default daily budget):
 
 ## TODO <a name="todo"> </a>
 
-- Add tests
-- Package app
-- Show history of transactions somewhere in app (amount and timestamp)
-- Allow a transaction to be edited to include description
-- Store transactions on GCP
-- Allow different currencies (should be an option on Settings page)
-- New button to add more budgets (e.g. one for food, one for travel). These budgets should be tabbed or selectable from a menu, and should have different names. They should also have different daily budgets.
+See [issues](https://github.com/whydidithavetobebugs/budgeting-app/issues)
