@@ -78,7 +78,7 @@ public class BudgetEngine {
         }
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("previousTimestamp", simpleDateFormat.format(original.getTime().getTime()));
-        editor.commit();
+        editor.apply();
 
         return numberOfDayChanges;
     }
