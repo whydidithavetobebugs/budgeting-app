@@ -25,7 +25,7 @@ public class BudgetEngine {
 
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putInt("amount", updatedAmount);
-        editor.commit();
+        editor.apply();
 
         if (updatedAmount > 0) {
             return resources.getString(R.string.over_budget, updatedAmount);
